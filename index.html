@@ -281,7 +281,7 @@
             <h1 class="slide-title">DDL Commands in SQL</h1>
             <h2 class="slide-subtitle">Data Definition Language</h2>
             <div class="team-members">
-                <p><strong>Presented by</strong></p>
+                <p><strong>Presented by Team</strong></p>
                 <p>D.Pavan Kalyan</p>
                 <p>J.Reddy Prasad</p>
                 <p>K.Tharun</p>
@@ -291,7 +291,7 @@
 
         <!-- Slide 2: Agenda -->
         <div class="slide">
-            <h1 class="slide-title">Agenda</h1>
+            <h1 class="slide-title">Today's Journey</h1>
             <div class="grid-2col">
                 <div class="card">
                     <div class="icon">📚</div>
@@ -314,11 +314,11 @@
                     <p>Hands-on Examples</p>
                 </div>
             </div>
-        </div>
+        </div>   
 
-        <!-- Slide 3: DBMS -->
+        <!-- Slide 3b: What is DBMS -->
         <div class="slide">
-            <h1 class="slide-title">DBMS</h1>
+            <h1 class="slide-title">What is DBMS?</h1>
             <h2 class="slide-subtitle">Database Management System</h2>
             <div class="icon">🗄️</div>
             <div class="big-text">Software for organized data storage & management</div>
@@ -406,17 +406,17 @@
                         </tr>
                         <tr>
                             <td style="padding: 12px; border-bottom: 1px solid #ddd;">101</td>
-                            <td style="padding: 12px; border-bottom: 1px solid #ddd;">Maths</td>
+                            <td style="padding: 12px; border-bottom: 1px solid #ddd;">Math</td>
                             <td style="padding: 12px; border-bottom: 1px solid #ddd;">95</td>
                         </tr>
                         <tr>
                             <td style="padding: 12px; border-bottom: 1px solid #ddd;">102</td>
-                            <td style="padding: 12px; border-bottom: 1px solid #ddd;">Maths</td>
+                            <td style="padding: 12px; border-bottom: 1px solid #ddd;">Math</td>
                             <td style="padding: 12px; border-bottom: 1px solid #ddd;">88</td>
                         </tr>
                         <tr>
                             <td style="padding: 12px;">103</td>
-                            <td style="padding: 12px;">Maths</td>
+                            <td style="padding: 12px;">Math</td>
                             <td style="padding: 12px;">92</td>
                         </tr>
                     </table>
@@ -646,6 +646,19 @@ CREATE TABLE Student (
     class CHAR(5)
 );
             </div>
+            <div style="margin-top: 20px;">
+                <p style="text-align: center; font-weight: bold; color: #0099cc; margin-bottom: 10px;">✅ Result: Student Table Created</p>
+                <table style="width: 100%; border-collapse: collapse; background: white; box-shadow: 0 5px 15px rgba(0,0,0,0.1); border-radius: 10px; overflow: hidden;">
+                    <tr>
+                        <th style="background: linear-gradient(135deg, #0099cc 0%, #006699 100%); color: white; padding: 12px; font-size: 0.9em;">sno</th>
+                        <th style="background: linear-gradient(135deg, #0099cc 0%, #006699 100%); color: white; padding: 12px; font-size: 0.9em;">sname</th>
+                        <th style="background: linear-gradient(135deg, #0099cc 0%, #006699 100%); color: white; padding: 12px; font-size: 0.9em;">class</th>
+                    </tr>
+                    <tr>
+                        <td colspan="3" style="padding: 15px; text-align: center; color: #999; font-style: italic;">Empty table - No records yet</td>
+                    </tr>
+                </table>
+            </div>
         </div>
 
         <!-- Slide 13: ALTER Overview -->
@@ -688,8 +701,34 @@ ADD (column_name datatype(size));
 ALTER TABLE Student 
 ADD Address VARCHAR2(50);
             </div>
-            <div class="card" style="margin-top: 30px; font-size: 1.2em;">
-                ✅ New column "Address" added
+            <div style="margin-top: 20px;">
+                <p style="text-align: center; font-weight: bold; color: #0099cc; margin-bottom: 10px;">✅ New column added</p>
+                <table style="width: 100%; border-collapse: collapse; background: white; box-shadow: 0 5px 15px rgba(0,0,0,0.1); border-radius: 10px; overflow: hidden;">
+                    <tr>
+                        <th style="background: linear-gradient(135deg, #0099cc 0%, #006699 100%); color: white; padding: 12px; font-size: 0.9em;">sno</th>
+                        <th style="background: linear-gradient(135deg, #0099cc 0%, #006699 100%); color: white; padding: 12px; font-size: 0.9em;">sname</th>
+                        <th style="background: linear-gradient(135deg, #0099cc 0%, #006699 100%); color: white; padding: 12px; font-size: 0.9em;">class</th>
+                        <th style="background: linear-gradient(135deg, #4caf50 0%, #2e7d32 100%); color: white; padding: 12px; font-size: 0.9em;">Address ✨</th>
+                    </tr>
+                    <tr>
+                        <td style="padding: 10px; border-bottom: 1px solid #ddd;">101</td>
+                        <td style="padding: 10px; border-bottom: 1px solid #ddd;">Rahul</td>
+                        <td style="padding: 10px; border-bottom: 1px solid #ddd;">10A</td>
+                        <td style="padding: 10px; border-bottom: 1px solid #ddd; color: #999; font-style: italic;">NULL</td>
+                    </tr>
+                    <tr>
+                        <td style="padding: 10px; border-bottom: 1px solid #ddd;">102</td>
+                        <td style="padding: 10px; border-bottom: 1px solid #ddd;">Priya</td>
+                        <td style="padding: 10px; border-bottom: 1px solid #ddd;">10B</td>
+                        <td style="padding: 10px; border-bottom: 1px solid #ddd; color: #999; font-style: italic;">NULL</td>
+                    </tr>
+                    <tr>
+                        <td style="padding: 10px;">103</td>
+                        <td style="padding: 10px;">Amit</td>
+                        <td style="padding: 10px;">10A</td>
+                        <td style="padding: 10px; color: #999; font-style: italic;">NULL</td>
+                    </tr>
+                </table>
             </div>
         </div>
 
@@ -706,8 +745,34 @@ MODIFY (column_name new_datatype(size));
 ALTER TABLE Student 
 MODIFY sname VARCHAR2(100);
             </div>
-            <div class="card" style="margin-top: 30px; font-size: 1.2em;">
-                ✅ Column size increased: 50 → 100
+            <div style="margin-top: 20px;">
+                <p style="text-align: center; font-weight: bold; color: #0099cc; margin-bottom: 10px;">✅ Column size: VARCHAR2(50) → VARCHAR2(100)</p>
+                <table style="width: 100%; border-collapse: collapse; background: white; box-shadow: 0 5px 15px rgba(0,0,0,0.1); border-radius: 10px; overflow: hidden;">
+                    <tr>
+                        <th style="background: linear-gradient(135deg, #0099cc 0%, #006699 100%); color: white; padding: 12px; font-size: 0.9em;">sno</th>
+                        <th style="background: linear-gradient(135deg, #ff9800 0%, #f57c00 100%); color: white; padding: 12px; font-size: 0.9em;">sname (100) 📏</th>
+                        <th style="background: linear-gradient(135deg, #0099cc 0%, #006699 100%); color: white; padding: 12px; font-size: 0.9em;">class</th>
+                        <th style="background: linear-gradient(135deg, #0099cc 0%, #006699 100%); color: white; padding: 12px; font-size: 0.9em;">Address</th>
+                    </tr>
+                    <tr>
+                        <td style="padding: 10px; border-bottom: 1px solid #ddd;">101</td>
+                        <td style="padding: 10px; border-bottom: 1px solid #ddd;">Rahul Kumar Sharma</td>
+                        <td style="padding: 10px; border-bottom: 1px solid #ddd;">10A</td>
+                        <td style="padding: 10px; border-bottom: 1px solid #ddd;">Delhi</td>
+                    </tr>
+                    <tr>
+                        <td style="padding: 10px; border-bottom: 1px solid #ddd;">102</td>
+                        <td style="padding: 10px; border-bottom: 1px solid #ddd;">Priya</td>
+                        <td style="padding: 10px; border-bottom: 1px solid #ddd;">10B</td>
+                        <td style="padding: 10px; border-bottom: 1px solid #ddd;">Mumbai</td>
+                    </tr>
+                    <tr>
+                        <td style="padding: 10px;">103</td>
+                        <td style="padding: 10px;">Amit</td>
+                        <td style="padding: 10px;">10A</td>
+                        <td style="padding: 10px;">Pune</td>
+                    </tr>
+                </table>
             </div>
         </div>
 
@@ -724,8 +789,30 @@ DROP COLUMN column_name;
 ALTER TABLE Student 
 DROP COLUMN class;
             </div>
-            <div class="card" style="margin-top: 30px; font-size: 1.2em; background: #ffebee;">
-                ⚠️ Column "class" permanently removed!
+            <div style="margin-top: 20px;">
+                <p style="text-align: center; font-weight: bold; color: #d32f2f; margin-bottom: 10px;">⚠️ "class" column removed</p>
+                <table style="width: 100%; border-collapse: collapse; background: white; box-shadow: 0 5px 15px rgba(0,0,0,0.1); border-radius: 10px; overflow: hidden;">
+                    <tr>
+                        <th style="background: linear-gradient(135deg, #0099cc 0%, #006699 100%); color: white; padding: 12px; font-size: 0.9em;">sno</th>
+                        <th style="background: linear-gradient(135deg, #0099cc 0%, #006699 100%); color: white; padding: 12px; font-size: 0.9em;">sname</th>
+                        <th style="background: linear-gradient(135deg, #0099cc 0%, #006699 100%); color: white; padding: 12px; font-size: 0.9em;">Address</th>
+                    </tr>
+                    <tr>
+                        <td style="padding: 10px; border-bottom: 1px solid #ddd;">101</td>
+                        <td style="padding: 10px; border-bottom: 1px solid #ddd;">Rahul Kumar Sharma</td>
+                        <td style="padding: 10px; border-bottom: 1px solid #ddd;">Delhi</td>
+                    </tr>
+                    <tr>
+                        <td style="padding: 10px; border-bottom: 1px solid #ddd;">102</td>
+                        <td style="padding: 10px; border-bottom: 1px solid #ddd;">Priya</td>
+                        <td style="padding: 10px; border-bottom: 1px solid #ddd;">Mumbai</td>
+                    </tr>
+                    <tr>
+                        <td style="padding: 10px;">103</td>
+                        <td style="padding: 10px;">Amit</td>
+                        <td style="padding: 10px;">Pune</td>
+                    </tr>
+                </table>
             </div>
         </div>
 
@@ -742,8 +829,30 @@ RENAME COLUMN old_name TO new_name;
 ALTER TABLE Student 
 RENAME COLUMN sname TO stu_name;
             </div>
-            <div class="card" style="margin-top: 30px; font-size: 1.2em;">
-                ✅ "sname" → "stu_name"
+            <div style="margin-top: 20px;">
+                <p style="text-align: center; font-weight: bold; color: #0099cc; margin-bottom: 10px;">✅ Column renamed: sname → stu_name</p>
+                <table style="width: 100%; border-collapse: collapse; background: white; box-shadow: 0 5px 15px rgba(0,0,0,0.1); border-radius: 10px; overflow: hidden;">
+                    <tr>
+                        <th style="background: linear-gradient(135deg, #0099cc 0%, #006699 100%); color: white; padding: 12px; font-size: 0.9em;">sno</th>
+                        <th style="background: linear-gradient(135deg, #9c27b0 0%, #6a1b9a 100%); color: white; padding: 12px; font-size: 0.9em;">stu_name 🔄</th>
+                        <th style="background: linear-gradient(135deg, #0099cc 0%, #006699 100%); color: white; padding: 12px; font-size: 0.9em;">Address</th>
+                    </tr>
+                    <tr>
+                        <td style="padding: 10px; border-bottom: 1px solid #ddd;">101</td>
+                        <td style="padding: 10px; border-bottom: 1px solid #ddd;">Rahul Kumar Sharma</td>
+                        <td style="padding: 10px; border-bottom: 1px solid #ddd;">Delhi</td>
+                    </tr>
+                    <tr>
+                        <td style="padding: 10px; border-bottom: 1px solid #ddd;">102</td>
+                        <td style="padding: 10px; border-bottom: 1px solid #ddd;">Priya</td>
+                        <td style="padding: 10px; border-bottom: 1px solid #ddd;">Mumbai</td>
+                    </tr>
+                    <tr>
+                        <td style="padding: 10px;">103</td>
+                        <td style="padding: 10px;">Amit</td>
+                        <td style="padding: 10px;">Pune</td>
+                    </tr>
+                </table>
             </div>
         </div>
 
@@ -759,14 +868,35 @@ TRUNCATE TABLE table_name;
 <strong>Example:</strong>
 TRUNCATE TABLE Student;
             </div>
-            <div class="grid-2col" style="margin-top: 30px;">
-                <div class="card" style="background: #e8f5e9;">
-                    <h3>✅ Removes</h3>
-                    <p style="font-size: 1.2em; margin-top: 15px;">All data</p>
+            <div class="grid-2col" style="margin-top: 20px;">
+                <div>
+                    <p style="text-align: center; font-weight: bold; color: #666; margin-bottom: 10px;">Before TRUNCATE</p>
+                    <table style="width: 100%; border-collapse: collapse; background: white; box-shadow: 0 5px 15px rgba(0,0,0,0.1); border-radius: 10px; overflow: hidden;">
+                        <tr>
+                            <th style="background: linear-gradient(135deg, #0099cc 0%, #006699 100%); color: white; padding: 10px; font-size: 0.85em;">sno</th>
+                            <th style="background: linear-gradient(135deg, #0099cc 0%, #006699 100%); color: white; padding: 10px; font-size: 0.85em;">stu_name</th>
+                        </tr>
+                        <tr>
+                            <td style="padding: 10px; border-bottom: 1px solid #ddd;">101</td>
+                            <td style="padding: 10px; border-bottom: 1px solid #ddd;">Rahul</td>
+                        </tr>
+                        <tr>
+                            <td style="padding: 10px;">102</td>
+                            <td style="padding: 10px;">Priya</td>
+                        </tr>
+                    </table>
                 </div>
-                <div class="card" style="background: #e3f2fd;">
-                    <h3>✅ Keeps</h3>
-                    <p style="font-size: 1.2em; margin-top: 15px;">Table structure</p>
+                <div>
+                    <p style="text-align: center; font-weight: bold; color: #ff9800; margin-bottom: 10px;">After TRUNCATE</p>
+                    <table style="width: 100%; border-collapse: collapse; background: white; box-shadow: 0 5px 15px rgba(0,0,0,0.1); border-radius: 10px; overflow: hidden;">
+                        <tr>
+                            <th style="background: linear-gradient(135deg, #0099cc 0%, #006699 100%); color: white; padding: 10px; font-size: 0.85em;">sno</th>
+                            <th style="background: linear-gradient(135deg, #0099cc 0%, #006699 100%); color: white; padding: 10px; font-size: 0.85em;">stu_name</th>
+                        </tr>
+                        <tr>
+                            <td colspan="2" style="padding: 15px; text-align: center; color: #ff9800; font-weight: bold;">All data deleted! 🧹</td>
+                        </tr>
+                    </table>
                 </div>
             </div>
         </div>
@@ -783,8 +913,14 @@ RENAME old_table_name TO new_table_name;
 <strong>Example:</strong>
 RENAME Student TO Student_Info;
             </div>
-            <div class="card" style="margin-top: 30px; font-size: 1.2em;">
-                ✅ Table renamed successfully
+            <div style="margin-top: 30px; text-align: center;">
+                <div style="display: inline-block; padding: 20px 40px; background: #ffebee; border-radius: 10px; margin-right: 20px;">
+                    <strong style="font-size: 1.3em; color: #d32f2f;">Student ❌</strong>
+                </div>
+                <span style="font-size: 2em; color: #0099cc;">→</span>
+                <div style="display: inline-block; padding: 20px 40px; background: #e8f5e9; border-radius: 10px; margin-left: 20px;">
+                    <strong style="font-size: 1.3em; color: #2e7d32;">Student_Info ✅</strong>
+                </div>
             </div>
         </div>
 
@@ -800,8 +936,13 @@ DROP TABLE table_name;
 <strong>Example:</strong>
 DROP TABLE Student;
             </div>
-            <div class="card" style="margin-top: 30px; font-size: 1.4em; background: linear-gradient(135deg, #ff6b6b 0%, #c92a2a 100%); color: white;">
-                ⚠️ PERMANENT DELETION!<br>No recovery possible
+            <div style="margin-top: 30px;">
+                <p style="text-align: center; font-weight: bold; color: #d32f2f; margin-bottom: 15px; font-size: 1.3em;">⚠️ COMPLETE DELETION</p>
+                <div style="text-align: center; padding: 40px; background: #ffebee; border: 3px dashed #d32f2f; border-radius: 15px;">
+                    <div style="font-size: 3em; margin-bottom: 15px;">🗑️</div>
+                    <p style="font-size: 1.3em; color: #d32f2f; font-weight: bold;">Student table no longer exists!</p>
+                    <p style="margin-top: 10px; color: #666;">Structure + Data = GONE FOREVER</p>
+                </div>
             </div>
         </div>
 
@@ -862,6 +1003,18 @@ DROP TABLE Student;
             </div>
         </div>
 
+        <!-- Slide 23: Best Practices -->
+        <div class="slide">
+            <h1 class="slide-title">Best Practices</h1>
+            <div class="bullet-points">
+                <li>📝 Use meaningful names</li>
+                <li>💾 Backup before DROP</li>
+                <li>⚡ VARCHAR2 > CHAR</li>
+                <li>🔍 Test in dev first</li>
+                <li>📋 Document changes</li>
+            </div>
+        </div>
+
         <!-- Slide 24: Common Mistakes -->
         <div class="slide">
             <h1 class="slide-title">Avoid These!</h1>
@@ -887,6 +1040,19 @@ DROP TABLE Student;
             </div>
         </div>
 
+        <!-- Slide 25: Live Demo -->
+        <div class="slide">
+            <h1 class="slide-title">Live Demo Time!</h1>
+            <div class="icon">💻</div>
+            <div class="bullet-points">
+                <li>CREATE table</li>
+                <li>ALTER operations</li>
+                <li>RENAME table</li>
+                <li>TRUNCATE data</li>
+                <li>DROP table</li>
+            </div>
+        </div>
+
         <!-- Slide 27: Lab Practice Assignment -->
         <div class="slide">
             <h1 class="slide-title">Lab Practice Assignment</h1>
@@ -896,9 +1062,6 @@ DROP TABLE Student;
                 <li><strong>Task 3:</strong> Change JOB_ID datatype to VARCHAR2</li>
                 <li><strong>Task 4:</strong> Rename Emp_no to E_no</li>
                 <li><strong>Task 5:</strong> Modify JOB_ID column width</li>
-            </div>
-            <div class="card" style="margin-top: 40px; background: linear-gradient(135deg, #0099cc 0%, #006699 100%); color: white; font-size: 1.3em;">
-                <strong>Practice makes perfect! 💪</strong>
             </div>
         </div>
 
@@ -978,7 +1141,7 @@ MODIFY Job_id VARCHAR2(20);
         <div class="navigation">
             <button class="btn-prev" onclick="changeSlide(-1)">← Previous</button>
             <div class="slide-counter">
-                <span>Slide <span id="current-slide">1</span> of <span id="total-slides">34</span></span>
+                <span>Slide <span id="current-slide">1</span> of <span id="total-slides">35</span></span>
             </div>
             <button class="btn-next" onclick="changeSlide(1)">Next →</button>
         </div>
@@ -1016,5 +1179,4 @@ MODIFY Job_id VARCHAR2(20);
         showSlide(0);
     </script>
 </body>
-
 </html>
