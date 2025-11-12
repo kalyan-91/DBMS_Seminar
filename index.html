@@ -1,4 +1,4 @@
-<!DOCTYPE html>
+ <!DOCTYPE html>
 <html lang="en">
 <head>
     <meta charset="UTF-8">
@@ -281,7 +281,7 @@
             <h1 class="slide-title">DDL Commands in SQL</h1>
             <h2 class="slide-subtitle">Data Definition Language</h2>
             <div class="team-members">
-                <p><strong>Presented by Team</strong></p>
+                <p><strong>Presented by</strong></p>
                 <p>D.Pavan Kalyan</p>
                 <p>J.Reddy Prasad</p>
                 <p>K.Tharun</p>
@@ -291,7 +291,7 @@
 
         <!-- Slide 2: Agenda -->
         <div class="slide">
-            <h1 class="slide-title">Today's Journey</h1>
+            <h1 class="slide-title">Agenda</h1>
             <div class="grid-2col">
                 <div class="card">
                     <div class="icon">📚</div>
@@ -314,7 +314,10 @@
                     <p>Hands-on Examples</p>
                 </div>
             </div>
-        </div>   
+        </div>
+
+        <!-- Slide 3: DBMS -->
+        
 
         <!-- Slide 3b: What is DBMS -->
         <div class="slide">
@@ -502,6 +505,11 @@ VALUES (101, 'Rahul');</pre>
         <!-- Slide 9: Data Types Table -->
         <div class="slide">
             <h1 class="slide-title">SQL Data Types</h1>
+            <p style="font-size: 1.2em; margin-bottom: 20px;">
+        <strong>Definition:</strong>  
+        A <strong>data type</strong> defines the kind of data a column can store, such as text, numbers, or dates. 
+        It helps the database know how to store and process the data.
+    </p>
             <div class="table-container">
                 <table>
                     <tr>
@@ -563,40 +571,6 @@ VALUES (101, 'Rahul');</pre>
             </div>
             <div class="big-text" style="font-size: 1.5em; margin-top: 40px;">
                 💡 VARCHAR2 saves space!
-            </div>
-        </div>
-        
-        <!-- Slide 10b: More Data Types -->
-        <div class="slide">
-            <h1 class="slide-title">Additional Data Types</h1>
-            <div class="table-container">
-                <table>
-                    <tr>
-                        <th>Type</th>
-                        <th>Description</th>
-                        <th>Example</th>
-                    </tr>
-                    <tr>
-                        <td><strong>CLOB</strong></td>
-                        <td>Character Large Object (up to 4GB)</td>
-                        <td>Entire books, manuals</td>
-                    </tr>
-                    <tr>
-                        <td><strong>BLOB</strong></td>
-                        <td>Binary Large Object (up to 4GB)</td>
-                        <td>Videos, large images</td>
-                    </tr>
-                    <tr>
-                        <td><strong>TIMESTAMP</strong></td>
-                        <td>Date with fractional seconds</td>
-                        <td>Transaction logs</td>
-                    </tr>
-                    <tr>
-                        <td><strong>FLOAT</strong></td>
-                        <td>Floating-point numbers</td>
-                        <td>Scientific calculations</td>
-                    </tr>
-                </table>
             </div>
         </div>
 
@@ -913,15 +887,51 @@ RENAME old_table_name TO new_table_name;
 <strong>Example:</strong>
 RENAME Student TO Student_Info;
             </div>
-            <div style="margin-top: 30px; text-align: center;">
-                <div style="display: inline-block; padding: 20px 40px; background: #ffebee; border-radius: 10px; margin-right: 20px;">
-                    <strong style="font-size: 1.3em; color: #d32f2f;">Student ❌</strong>
+            <div class="grid-2col" style="margin-top: 20px;">
+                <div>
+                    <p style="text-align: center; font-weight: bold; color: #d32f2f; margin-bottom: 10px;">Before: Student ❌</p>
+                    <table style="width: 100%; border-collapse: collapse; background: white; box-shadow: 0 5px 15px rgba(0,0,0,0.1); border-radius: 10px; overflow: hidden;">
+                        <tr>
+                            <th style="background: linear-gradient(135deg, #999 0%, #666 100%); color: white; padding: 10px; font-size: 0.85em;">sno</th>
+                            <th style="background: linear-gradient(135deg, #999 0%, #666 100%); color: white; padding: 10px; font-size: 0.85em;">stu_name</th>
+                            <th style="background: linear-gradient(135deg, #999 0%, #666 100%); color: white; padding: 10px; font-size: 0.85em;">Address</th>
+                        </tr>
+                        <tr>
+                            <td style="padding: 8px; border-bottom: 1px solid #ddd;">101</td>
+                            <td style="padding: 8px; border-bottom: 1px solid #ddd;">Rahul</td>
+                            <td style="padding: 8px; border-bottom: 1px solid #ddd;">Delhi</td>
+                        </tr>
+                        <tr>
+                            <td style="padding: 8px;">102</td>
+                            <td style="padding: 8px;">Priya</td>
+                            <td style="padding: 8px;">Mumbai</td>
+                        </tr>
+                    </table>
                 </div>
-                <span style="font-size: 2em; color: #0099cc;">→</span>
-                <div style="display: inline-block; padding: 20px 40px; background: #e8f5e9; border-radius: 10px; margin-left: 20px;">
-                    <strong style="font-size: 1.3em; color: #2e7d32;">Student_Info ✅</strong>
+                <div>
+                    <p style="text-align: center; font-weight: bold; color: #2e7d32; margin-bottom: 10px;">After: Student_Info ✅</p>
+                    <table style="width: 100%; border-collapse: collapse; background: white; box-shadow: 0 5px 15px rgba(0,0,0,0.1); border-radius: 10px; overflow: hidden;">
+                        <tr>
+                            <th style="background: linear-gradient(135deg, #4caf50 0%, #2e7d32 100%); color: white; padding: 10px; font-size: 0.85em;">sno</th>
+                            <th style="background: linear-gradient(135deg, #4caf50 0%, #2e7d32 100%); color: white; padding: 10px; font-size: 0.85em;">stu_name</th>
+                            <th style="background: linear-gradient(135deg, #4caf50 0%, #2e7d32 100%); color: white; padding: 10px; font-size: 0.85em;">Address</th>
+                        </tr>
+                        <tr>
+                            <td style="padding: 8px; border-bottom: 1px solid #ddd;">101</td>
+                            <td style="padding: 8px; border-bottom: 1px solid #ddd;">Rahul</td>
+                            <td style="padding: 8px; border-bottom: 1px solid #ddd;">Delhi</td>
+                        </tr>
+                        <tr>
+                            <td style="padding: 8px;">102</td>
+                            <td style="padding: 8px;">Priya</td>
+                            <td style="padding: 8px;">Mumbai</td>
+                        </tr>
+                    </table>
                 </div>
             </div>
+            <p style="text-align: center; margin-top: 15px; color: #0099cc; font-size: 1.1em;">
+                <strong>📌 Same data, different table name!</strong>
+            </p>
         </div>
 
         <!-- Slide 20: DROP -->
@@ -1080,6 +1090,24 @@ CREATE TABLE EMPLOYEE (
     Salary NUMBER(8,2)
 );
             </div>
+            <div style="margin-top: 15px;">
+                <p style="text-align: center; font-weight: bold; color: #0099cc; margin-bottom: 10px;">✅ EMPLOYEE Table Created</p>
+                <table style="width: 100%; border-collapse: collapse; background: white; box-shadow: 0 5px 15px rgba(0,0,0,0.1); border-radius: 10px; overflow: hidden; font-size: 0.75em;">
+                    <tr>
+                        <th style="background: linear-gradient(135deg, #0099cc 0%, #006699 100%); color: white; padding: 8px;">Emp_no</th>
+                        <th style="background: linear-gradient(135deg, #0099cc 0%, #006699 100%); color: white; padding: 8px;">E_name</th>
+                        <th style="background: linear-gradient(135deg, #0099cc 0%, #006699 100%); color: white; padding: 8px;">E_address</th>
+                        <th style="background: linear-gradient(135deg, #0099cc 0%, #006699 100%); color: white; padding: 8px;">E_ph_no</th>
+                        <th style="background: linear-gradient(135deg, #0099cc 0%, #006699 100%); color: white; padding: 8px;">Dept_no</th>
+                        <th style="background: linear-gradient(135deg, #0099cc 0%, #006699 100%); color: white; padding: 8px;">Dept_name</th>
+                        <th style="background: linear-gradient(135deg, #0099cc 0%, #006699 100%); color: white; padding: 8px;">Job_id</th>
+                        <th style="background: linear-gradient(135deg, #0099cc 0%, #006699 100%); color: white; padding: 8px;">Salary</th>
+                    </tr>
+                    <tr>
+                        <td colspan="8" style="padding: 12px; text-align: center; color: #999; font-style: italic;">Empty table - Ready for data</td>
+                    </tr>
+                </table>
+            </div>
         </div>
 
         <!-- Slide 27c: Task 2 - ADD Column -->
@@ -1089,8 +1117,40 @@ CREATE TABLE EMPLOYEE (
 ALTER TABLE EMPLOYEE 
 ADD HIREDATE DATE;
             </div>
-            <div class="card" style="margin-top: 50px; font-size: 1.3em;">
-                ✅ New column HIREDATE added
+            <div style="margin-top: 15px;">
+                <p style="text-align: center; font-weight: bold; color: #0099cc; margin-bottom: 10px;">✅ HIREDATE column added</p>
+                <table style="width: 100%; border-collapse: collapse; background: white; box-shadow: 0 5px 15px rgba(0,0,0,0.1); border-radius: 10px; overflow: hidden; font-size: 0.75em;">
+                    <tr>
+                        <th style="background: linear-gradient(135deg, #0099cc 0%, #006699 100%); color: white; padding: 8px;">Emp_no</th>
+                        <th style="background: linear-gradient(135deg, #0099cc 0%, #006699 100%); color: white; padding: 8px;">E_name</th>
+                        <th style="background: linear-gradient(135deg, #0099cc 0%, #006699 100%); color: white; padding: 8px;">E_address</th>
+                        <th style="background: linear-gradient(135deg, #0099cc 0%, #006699 100%); color: white; padding: 8px;">Dept_no</th>
+                        <th style="background: linear-gradient(135deg, #0099cc 0%, #006699 100%); color: white; padding: 8px;">Dept_name</th>
+                        <th style="background: linear-gradient(135deg, #0099cc 0%, #006699 100%); color: white; padding: 8px;">Job_id</th>
+                        <th style="background: linear-gradient(135deg, #0099cc 0%, #006699 100%); color: white; padding: 8px;">Salary</th>
+                        <th style="background: linear-gradient(135deg, #4caf50 0%, #2e7d32 100%); color: white; padding: 8px;">HIREDATE ✨</th>
+                    </tr>
+                    <tr>
+                        <td style="padding: 8px; border-bottom: 1px solid #ddd;">1001</td>
+                        <td style="padding: 8px; border-bottom: 1px solid #ddd;">Rajesh Kumar</td>
+                        <td style="padding: 8px; border-bottom: 1px solid #ddd;">Bangalore</td>
+                        <td style="padding: 8px; border-bottom: 1px solid #ddd;">10</td>
+                        <td style="padding: 8px; border-bottom: 1px solid #ddd;">IT</td>
+                        <td style="padding: 8px; border-bottom: 1px solid #ddd;">DEV01</td>
+                        <td style="padding: 8px; border-bottom: 1px solid #ddd;">75000</td>
+                        <td style="padding: 8px; border-bottom: 1px solid #ddd; color: #999; font-style: italic;">NULL</td>
+                    </tr>
+                    <tr>
+                        <td style="padding: 8px;">1002</td>
+                        <td style="padding: 8px;">Sneha Patel</td>
+                        <td style="padding: 8px;">Mumbai</td>
+                        <td style="padding: 8px;">20</td>
+                        <td style="padding: 8px;">HR</td>
+                        <td style="padding: 8px;">HR01</td>
+                        <td style="padding: 8px;">60000</td>
+                        <td style="padding: 8px; color: #999; font-style: italic;">NULL</td>
+                    </tr>
+                </table>
             </div>
         </div>
 
@@ -1101,8 +1161,34 @@ ADD HIREDATE DATE;
 ALTER TABLE EMPLOYEE 
 MODIFY Job_id VARCHAR2(10);
             </div>
-            <div class="card" style="margin-top: 50px; font-size: 1.3em;">
-                ✅ Job_id: CHAR → VARCHAR2
+            <div style="margin-top: 15px;">
+                <p style="text-align: center; font-weight: bold; color: #0099cc; margin-bottom: 10px;">✅ Job_id: CHAR(10) → VARCHAR2(10)</p>
+                <table style="width: 100%; border-collapse: collapse; background: white; box-shadow: 0 5px 15px rgba(0,0,0,0.1); border-radius: 10px; overflow: hidden; font-size: 0.8em;">
+                    <tr>
+                        <th style="background: linear-gradient(135deg, #0099cc 0%, #006699 100%); color: white; padding: 8px;">Emp_no</th>
+                        <th style="background: linear-gradient(135deg, #0099cc 0%, #006699 100%); color: white; padding: 8px;">E_name</th>
+                        <th style="background: linear-gradient(135deg, #0099cc 0%, #006699 100%); color: white; padding: 8px;">Dept_name</th>
+                        <th style="background: linear-gradient(135deg, #ff9800 0%, #f57c00 100%); color: white; padding: 8px;">Job_id 📏</th>
+                        <th style="background: linear-gradient(135deg, #0099cc 0%, #006699 100%); color: white; padding: 8px;">Salary</th>
+                        <th style="background: linear-gradient(135deg, #0099cc 0%, #006699 100%); color: white; padding: 8px;">HIREDATE</th>
+                    </tr>
+                    <tr>
+                        <td style="padding: 8px; border-bottom: 1px solid #ddd;">1001</td>
+                        <td style="padding: 8px; border-bottom: 1px solid #ddd;">Rajesh Kumar</td>
+                        <td style="padding: 8px; border-bottom: 1px solid #ddd;">IT</td>
+                        <td style="padding: 8px; border-bottom: 1px solid #ddd;">DEV01</td>
+                        <td style="padding: 8px; border-bottom: 1px solid #ddd;">75000</td>
+                        <td style="padding: 8px; border-bottom: 1px solid #ddd;">15-JAN-23</td>
+                    </tr>
+                    <tr>
+                        <td style="padding: 8px;">1002</td>
+                        <td style="padding: 8px;">Sneha Patel</td>
+                        <td style="padding: 8px;">HR</td>
+                        <td style="padding: 8px;">HR01</td>
+                        <td style="padding: 8px;">60000</td>
+                        <td style="padding: 8px;">20-MAR-23</td>
+                    </tr>
+                </table>
             </div>
         </div>
 
@@ -1113,8 +1199,34 @@ MODIFY Job_id VARCHAR2(10);
 ALTER TABLE EMPLOYEE 
 RENAME COLUMN Emp_no TO E_no;
             </div>
-            <div class="card" style="margin-top: 50px; font-size: 1.3em;">
-                ✅ Emp_no → E_no
+            <div style="margin-top: 15px;">
+                <p style="text-align: center; font-weight: bold; color: #0099cc; margin-bottom: 10px;">✅ Emp_no → E_no</p>
+                <table style="width: 100%; border-collapse: collapse; background: white; box-shadow: 0 5px 15px rgba(0,0,0,0.1); border-radius: 10px; overflow: hidden; font-size: 0.8em;">
+                    <tr>
+                        <th style="background: linear-gradient(135deg, #9c27b0 0%, #6a1b9a 100%); color: white; padding: 8px;">E_no 🔄</th>
+                        <th style="background: linear-gradient(135deg, #0099cc 0%, #006699 100%); color: white; padding: 8px;">E_name</th>
+                        <th style="background: linear-gradient(135deg, #0099cc 0%, #006699 100%); color: white; padding: 8px;">Dept_name</th>
+                        <th style="background: linear-gradient(135deg, #0099cc 0%, #006699 100%); color: white; padding: 8px;">Job_id</th>
+                        <th style="background: linear-gradient(135deg, #0099cc 0%, #006699 100%); color: white; padding: 8px;">Salary</th>
+                        <th style="background: linear-gradient(135deg, #0099cc 0%, #006699 100%); color: white; padding: 8px;">HIREDATE</th>
+                    </tr>
+                    <tr>
+                        <td style="padding: 8px; border-bottom: 1px solid #ddd;">1001</td>
+                        <td style="padding: 8px; border-bottom: 1px solid #ddd;">Rajesh Kumar</td>
+                        <td style="padding: 8px; border-bottom: 1px solid #ddd;">IT</td>
+                        <td style="padding: 8px; border-bottom: 1px solid #ddd;">DEV01</td>
+                        <td style="padding: 8px; border-bottom: 1px solid #ddd;">75000</td>
+                        <td style="padding: 8px; border-bottom: 1px solid #ddd;">15-JAN-23</td>
+                    </tr>
+                    <tr>
+                        <td style="padding: 8px;">1002</td>
+                        <td style="padding: 8px;">Sneha Patel</td>
+                        <td style="padding: 8px;">HR</td>
+                        <td style="padding: 8px;">HR01</td>
+                        <td style="padding: 8px;">60000</td>
+                        <td style="padding: 8px;">20-MAR-23</td>
+                    </tr>
+                </table>
             </div>
         </div>
 
@@ -1125,8 +1237,34 @@ RENAME COLUMN Emp_no TO E_no;
 ALTER TABLE EMPLOYEE 
 MODIFY Job_id VARCHAR2(20);
             </div>
-            <div class="card" style="margin-top: 50px; font-size: 1.3em;">
-                ✅ Job_id width: 10 → 20
+            <div style="margin-top: 15px;">
+                <p style="text-align: center; font-weight: bold; color: #0099cc; margin-bottom: 10px;">✅ Job_id width: VARCHAR2(10) → VARCHAR2(20)</p>
+                <table style="width: 100%; border-collapse: collapse; background: white; box-shadow: 0 5px 15px rgba(0,0,0,0.1); border-radius: 10px; overflow: hidden; font-size: 0.8em;">
+                    <tr>
+                        <th style="background: linear-gradient(135deg, #0099cc 0%, #006699 100%); color: white; padding: 8px;">E_no</th>
+                        <th style="background: linear-gradient(135deg, #0099cc 0%, #006699 100%); color: white; padding: 8px;">E_name</th>
+                        <th style="background: linear-gradient(135deg, #0099cc 0%, #006699 100%); color: white; padding: 8px;">Dept_name</th>
+                        <th style="background: linear-gradient(135deg, #4caf50 0%, #2e7d32 100%); color: white; padding: 8px;">Job_id (20) 📏</th>
+                        <th style="background: linear-gradient(135deg, #0099cc 0%, #006699 100%); color: white; padding: 8px;">Salary</th>
+                    </tr>
+                    <tr>
+                        <td style="padding: 8px; border-bottom: 1px solid #ddd;">1001</td>
+                        <td style="padding: 8px; border-bottom: 1px solid #ddd;">Rajesh Kumar</td>
+                        <td style="padding: 8px; border-bottom: 1px solid #ddd;">IT</td>
+                        <td style="padding: 8px; border-bottom: 1px solid #ddd;">SENIOR_DEVELOPER</td>
+                        <td style="padding: 8px; border-bottom: 1px solid #ddd;">75000</td>
+                    </tr>
+                    <tr>
+                        <td style="padding: 8px;">1002</td>
+                        <td style="padding: 8px;">Sneha Patel</td>
+                        <td style="padding: 8px;">HR</td>
+                        <td style="padding: 8px;">HR_MANAGER</td>
+                        <td style="padding: 8px;">60000</td>
+                    </tr>
+                </table>
+                <p style="text-align: center; margin-top: 10px; color: #4caf50; font-size: 0.95em;">
+                    <strong>Now can store longer job titles!</strong>
+                </p>
             </div>
         </div>
 
@@ -1134,7 +1272,6 @@ MODIFY Job_id VARCHAR2(20);
         <div class="slide">
             <div class="icon">🙏</div>
             <h1 class="slide-title">Thank You!</h1>
-            <div class="big-text" style="margin-top: 60px;">Keep Learning SQL! 🚀</div>
         </div>
 
         <!-- Navigation -->
